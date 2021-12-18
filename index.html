@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+
+  <title>Portfolio - Jamaica</title>
+
+  <style>
+    [class*="col"]{
+      padding: 1rem;
+      background-color: #fff;       
+      color: #fff;
+      text-align: center;
+    } 
+    h3{
+      font-family: cursive;
+      color: black;
+    }
+    h4{
+      font-family: cursive;
+      color: black;
+    }
+    p{
+      font-size: 1.5rem;
+      color: black;
+    }
+    .top{
+      font-size: 3rem;
+      font-family: math;
+    }
+    .social-icons .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.5rem;
+      width: 3.5rem;
+      background-color: green;
+      color: #fff;
+      border-radius: 100%;
+      font-size: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    .social-icons .social-icon:last-child {
+      margin-right: 0;
+    }
+    .social-icons .social-icon:hover {
+      background-color: white;
+      color: green;
+    }    
+  </style>
+
+</head>
+<body>
+  <nav class="fix-top" style="background-color: green; border-radius: 0px 0px 25px 25px;">
+    <center><h1 style="padding-top: 40px; padding-bottom: 40px; color: white;">My Portfolio</h1></center>
+  </nav>
+
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-7"> 
+        <p class="top name">I am Jamaica Grace P. Rarama</p>
+        <h3>rarama.jamaica@clsu2.edu.ph</h3>
+        <h4>(+63) 947 870 3047</h4>
+        <div class="social-icons mt-3">
+          <a class="social-icon" href="https://www.facebook.com/jamaicagrace.rarama/"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-icon" href="https://www.instagram.com/jamaicararama/"><i class="fab fa-instagram"></i></a>
+          <a class="social-icon" href="https://github.com/Zebedib"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="col-md-5" style="border: solid; border-color: green;">
+          <img src="assets/profile.jpg" class="col-md-9 ms-5"/> 
+      </div>      
+    </div>
+  </div>  
+
+  <hr style="color: white; height:5px; background-color:green">
+
+  <div class="container">
+    <div class="row gx-4">
+      <div class="col">
+        <h1 class="top" style="background-color: green; padding: 20px; border-radius: 20px 0px 20px 0px">Projects</h1>
+      </div>
+      <center>
+        <div class="slider mb-5">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+              <img src="assets/mov.png" style="border: solid; border-color: black">
+            </div>
+            <div class="slide">
+              <img src="assets/lara.png" style="border: solid; border-color: black">
+            </div>
+            <div class="slide">
+              <img src="assets/virt.png" style="border: solid; border-color: black">
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+
+          </div>
+        </div>
+      </center>
+
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if (counter > 3){
+            counter = 1
+          }
+        }, 5000);
+      </script>
+    </div>
+  </div>    
+
+  <hr style="color: white; height:5px; background-color:green">
+
+  <div class="container">
+    <div class="col">
+       <h1 class="top" style="background-color: green; padding: 20px; border-radius: 20px 0px 20px 0px">About Me</h1>
+        <center>
+          <div class="col-md-6">
+            <p>A 4th year student of Central Luzon State University taking Bachelor of Science in Information and Technology major in System Development.</p> 
+          </div>
+        </center>                        
+     </div> 
+  </div>
+
+  <div class="copyright py-4 text-center text-light" style="background-color: green; border-radius: 25px 25px 0px 0px">
+    <div class="container"><small>Copyright &copy; ChamDevs 2021</small></div>
+  </div>
+
+</body>
+</html>
